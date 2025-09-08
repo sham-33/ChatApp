@@ -28,11 +28,14 @@ const RightSidebar = ({ selectedUser }) => {
                 key={index}
                 onClick={() => window.open(url)}
                 className="cursor-pointer rounded">
-                <img src={url} alt="" className='h-full rounded-md'/>
-                </div>
+                <img src={url} alt="" className="h-full rounded-md" />
+              </div>
             ))}
           </div>
         </div>
+        <button className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-purple-400 to-violet-600 text-white border-none text-sm font-light py-2 px-20 rounded-full cursor-pointer">
+          Logout
+        </button>
       </div>
     )
   );
